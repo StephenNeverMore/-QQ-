@@ -1,0 +1,143 @@
+<com.example.shuang.animator.MySlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stephen="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingmenu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#909090"
+    android:scrollbars="none"
+    stephen:rightPadding="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="TEST"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="TEST"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="TEST"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dd56d9">
+
+            <ImageView
+                android:id="@+id/iv_a"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/iv_d"
+                android:layout_alignStart="@+id/iv_d"
+                android:layout_below="@+id/iv_d"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/test1"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_b"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/iv_a"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/iv_a"
+                android:src="@drawable/test2"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_c"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/iv_a"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@+id/iv_a"
+                android:src="@drawable/test3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_d"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/test4"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_e"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/iv_b"
+                android:layout_alignStart="@+id/iv_b"
+                android:layout_alignTop="@+id/iv_d"
+                android:src="@drawable/test5"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_f"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/iv_c"
+                android:layout_alignStart="@+id/iv_c"
+                android:layout_alignTop="@+id/iv_d"
+                android:src="@drawable/test3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_g"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/iv_d"
+                android:layout_marginBottom="100dp"
+                android:layout_toEndOf="@+id/iv_c"
+                android:layout_toRightOf="@+id/iv_c"
+                android:src="@drawable/test4"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_h"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/iv_e"
+                android:layout_alignStart="@+id/iv_e"
+                android:layout_alignTop="@+id/iv_g"
+                android:src="@drawable/test2"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_i"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/iv_f"
+                android:layout_alignStart="@+id/iv_f"
+                android:layout_alignTop="@+id/iv_g"
+                android:src="@drawable/test5"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.example.shuang.animator.MySlidingMenu>
